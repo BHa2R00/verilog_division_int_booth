@@ -1,121 +1,121 @@
 # verilog_division_int_booth
 integer division verilog code generator in booth code
 ![dc_shell](https://github.com/BHa2R00/verilog_division_int_booth/blob/master/20200114232937_1481x530_scrot.png)
- clock clk (rise edge)                                   0.00       0.00
-  clock network delay (ideal)                             0.00       0.00
-  hub/div_wdata_ds_r_reg[0]/CLK (DFFX1)                   0.00       0.00 r
-  hub/div_wdata_ds_r_reg[0]/Q (DFFX1)                     0.08       0.08 r
-  hub/U185/Y (INVX1)                                      0.03       0.11 f
-  hub/U186/Y (INVX4)                                      0.09       0.20 r
-  hub/div_wdata_ds[0] (hub_dw16_aw15)                     0.00       0.20 r
-  div16/ds[0] (div16)                                     0.00       0.20 r
-  div16/sub_10/B[16] (div16_DW01_sub_16)                  0.00       0.20 r
-  div16/sub_10/U1_16/Y (INVX1)                            0.10       0.30 f
-  div16/sub_10/U28/Y (AND2X1)                             0.06       0.36 f
-  div16/sub_10/U26/Y (AND2X1)                             0.05       0.41 f
-  div16/sub_10/U24/Y (AND2X1)                             0.05       0.47 f
-  div16/sub_10/U22/Y (AND2X1)                             0.05       0.52 f
-  div16/sub_10/U20/Y (AND2X1)                             0.05       0.57 f
-  div16/sub_10/U18/Y (AND2X1)                             0.05       0.63 f
-  div16/sub_10/U16/Y (AND2X1)                             0.05       0.68 f
-  div16/sub_10/U14/Y (AND2X1)                             0.05       0.73 f
-  div16/sub_10/U12/Y (AND2X1)                             0.05       0.79 f
-  div16/sub_10/U10/Y (AND2X1)                             0.05       0.84 f
-  div16/sub_10/U8/Y (AND2X1)                              0.05       0.89 f
-  div16/sub_10/U6/Y (AND2X1)                              0.05       0.95 f
-  div16/sub_10/U4/Y (AND2X1)                              0.05       1.00 f
-  div16/sub_10/U2/Y (AND2X1)                              0.05       1.05 f
-  div16/sub_10/U1/Y (XOR2X2)                              0.09       1.14 f
-  div16/sub_10/DIFF[31] (div16_DW01_sub_16)               0.00       1.14 f
-  div16/mult_add_11_aco/B[0] (div16_DW02_mult_16)         0.00       1.14 f
-  div16/mult_add_11_aco/A0_16/Y (AND2X1)                  0.07       1.22 f
-  div16/mult_add_11_aco/PRODUCT[16] (div16_DW02_mult_16)
-                                                          0.00       1.22 f
-  div16/add_1_root_sub_15/B[16] (div16_DW01_add_16)       0.00       1.22 f
-  div16/add_1_root_sub_15/U2/Y (XOR2X2)                   0.09       1.31 r
-  div16/add_1_root_sub_15/SUM[16] (div16_DW01_add_16)     0.00       1.31 r
-  div16/sub_0_root_sub_15/A[16] (div16_DW01_sub_15)       0.00       1.31 r
-  div16/sub_0_root_sub_15/U2_16/CO (FADDX1)               0.10       1.41 r
-  div16/sub_0_root_sub_15/U2_17/CO (FADDX1)               0.08       1.49 r
-  div16/sub_0_root_sub_15/U2_18/CO (FADDX1)               0.08       1.58 r
-  div16/sub_0_root_sub_15/U2_19/CO (FADDX1)               0.08       1.66 r
-  div16/sub_0_root_sub_15/U2_20/CO (FADDX1)               0.08       1.74 r
-  div16/sub_0_root_sub_15/U2_21/CO (FADDX1)               0.08       1.82 r
-  div16/sub_0_root_sub_15/U2_22/CO (FADDX1)               0.08       1.91 r
-  div16/sub_0_root_sub_15/U2_23/CO (FADDX1)               0.08       1.99 r
-  div16/sub_0_root_sub_15/U2_24/CO (FADDX1)               0.08       2.07 r
-  div16/sub_0_root_sub_15/U2_25/CO (FADDX1)               0.08       2.16 r
-  div16/sub_0_root_sub_15/U2_26/CO (FADDX1)               0.08       2.24 r
-  div16/sub_0_root_sub_15/U2_27/CO (FADDX1)               0.08       2.32 r
-  div16/sub_0_root_sub_15/U2_28/CO (FADDX1)               0.08       2.40 r
-  div16/sub_0_root_sub_15/U2_29/CO (FADDX1)               0.08       2.49 r
-  div16/sub_0_root_sub_15/U2_30/CO (FADDX1)               0.08       2.57 r
-  div16/sub_0_root_sub_15/U1/Y (XNOR2X2)                  0.10       2.67 f
-  div16/sub_0_root_sub_15/DIFF[31] (div16_DW01_sub_15)
-                                                          0.00       2.67 f
-  div16/mult_add_16_aco/B[0] (div16_DW02_mult_15)         0.00       2.67 f
-  div16/mult_add_16_aco/A0_15/Y (AND2X1)                  0.08       2.75 f
-  div16/mult_add_16_aco/PRODUCT[15] (div16_DW02_mult_15)
-                                                          0.00       2.75 f
-  div16/add_1_root_sub_20/B[15] (div16_DW01_add_15)       0.00       2.75 f
-  div16/add_1_root_sub_20/U3/Y (XOR2X2)                   0.09       2.84 r
-  div16/add_1_root_sub_20/SUM[15] (div16_DW01_add_15)     0.00       2.84 r
-  div16/sub_0_root_sub_20/A[15] (div16_DW01_sub_14)       0.00       2.84 r
-  div16/sub_0_root_sub_20/U2_15/CO (FADDX1)               0.10       2.94 r
-  div16/sub_0_root_sub_20/U2_16/CO (FADDX1)               0.08       3.02 r
-  div16/sub_0_root_sub_20/U2_17/CO (FADDX1)               0.08       3.11 r
-  div16/sub_0_root_sub_20/U2_18/CO (FADDX1)               0.08       3.19 r
-  div16/sub_0_root_sub_20/U2_19/CO (FADDX1)               0.08       3.27 r
-  div16/sub_0_root_sub_20/U2_20/CO (FADDX1)               0.08       3.36 r
-  div16/sub_0_root_sub_20/U2_21/CO (FADDX1)               0.08       3.44 r
-  div16/sub_0_root_sub_20/U2_22/CO (FADDX1)               0.08       3.52 r
-  div16/sub_0_root_sub_20/U2_23/CO (FADDX1)               0.08       3.60 r
-  div16/sub_0_root_sub_20/U2_24/CO (FADDX1)               0.08       3.69 r
-  div16/sub_0_root_sub_20/U2_25/CO (FADDX1)               0.08       3.77 r
-  div16/sub_0_root_sub_20/U2_26/CO (FADDX1)               0.08       3.85 r
-  div16/sub_0_root_sub_20/U2_27/CO (FADDX1)               0.08       3.93 r
-  div16/sub_0_root_sub_20/U2_28/CO (FADDX1)               0.08       4.02 r
-  div16/sub_0_root_sub_20/U2_29/CO (FADDX1)               0.09       4.10 r
-  div16/sub_0_root_sub_20/U1/Y (OR2X1)                    0.06       4.16 r
-  div16/sub_0_root_sub_20/U3/Y (XNOR2X2)                  0.10       4.26 f
-  div16/sub_0_root_sub_20/DIFF[31] (div16_DW01_sub_14)
-                                                          0.00       4.26 f
-  div16/mult_add_21_aco/B[0] (div16_DW02_mult_14)         0.00       4.26 f
-  div16/mult_add_21_aco/A0_14/Y (AND2X1)                  0.08       4.34 f
-  div16/mult_add_21_aco/PRODUCT[14] (div16_DW02_mult_14)
-                                                          0.00       4.34 f
-  div16/add_1_root_sub_25/B[14] (div16_DW01_add_14)       0.00       4.34 f
-  div16/add_1_root_sub_25/U5/Y (XOR2X2)                   0.09       4.43 r
-  div16/add_1_root_sub_25/SUM[14] (div16_DW01_add_14)     0.00       4.43 r
-  div16/sub_0_root_sub_25/A[14] (div16_DW01_sub_13)       0.00       4.43 r
-  div16/sub_0_root_sub_25/U2_14/CO (FADDX1)               0.10       4.53 r
-  div16/sub_0_root_sub_25/U2_15/CO (FADDX1)               0.08       4.61 r
-  div16/sub_0_root_sub_25/U2_16/CO (FADDX1)               0.08       4.70 r
-  div16/sub_0_root_sub_25/U2_17/CO (FADDX1)               0.08       4.78 r
-  div16/sub_0_root_sub_25/U2_18/CO (FADDX1)               0.08       4.86 r
-  div16/sub_0_root_sub_25/U2_19/CO (FADDX1)               0.08       4.94 r
-  div16/sub_0_root_sub_25/U2_20/CO (FADDX1)               0.08       5.03 r
-  div16/sub_0_root_sub_25/U2_21/CO (FADDX1)               0.08       5.11 r
-  div16/sub_0_root_sub_25/U2_22/CO (FADDX1)               0.08       5.19 r
-  div16/sub_0_root_sub_25/U2_23/CO (FADDX1)               0.08       5.28 r
-  div16/sub_0_root_sub_25/U2_24/CO (FADDX1)               0.08       5.36 r
-  div16/sub_0_root_sub_25/U2_25/CO (FADDX1)               0.08       5.44 r
-  div16/sub_0_root_sub_25/U2_26/CO (FADDX1)               0.08       5.52 r
-  div16/sub_0_root_sub_25/U2_27/CO (FADDX1)               0.08       5.61 r
-  div16/sub_0_root_sub_25/U2_28/CO (FADDX1)               0.09       5.69 r
-  div16/sub_0_root_sub_25/U1/Y (OR2X1)                    0.06       5.75 r
-  div16/sub_0_root_sub_25/U3/Y (OR2X1)                    0.05       5.80 r
-  div16/sub_0_root_sub_25/U5/Y (XNOR2X2)                  0.10       5.91 f
-  div16/sub_0_root_sub_25/DIFF[31] (div16_DW01_sub_13)
+ clock clk (rise edge)                                   0.00       0.00  
+  clock network delay (ideal)                             0.00       0.00  
+  hub/div_wdata_ds_r_reg[0]/CLK (DFFX1)                   0.00       0.00 r 
+  hub/div_wdata_ds_r_reg[0]/Q (DFFX1)                     0.08       0.08 r 
+  hub/U185/Y (INVX1)                                      0.03       0.11 f 
+  hub/U186/Y (INVX4)                                      0.09       0.20 r 
+  hub/div_wdata_ds[0] (hub_dw16_aw15)                     0.00       0.20 r 
+  div16/ds[0] (div16)                                     0.00       0.20 r 
+  div16/sub_10/B[16] (div16_DW01_sub_16)                  0.00       0.20 r 
+  div16/sub_10/U1_16/Y (INVX1)                            0.10       0.30 f 
+  div16/sub_10/U28/Y (AND2X1)                             0.06       0.36 f 
+  div16/sub_10/U26/Y (AND2X1)                             0.05       0.41 f 
+  div16/sub_10/U24/Y (AND2X1)                             0.05       0.47 f 
+  div16/sub_10/U22/Y (AND2X1)                             0.05       0.52 f 
+  div16/sub_10/U20/Y (AND2X1)                             0.05       0.57 f 
+  div16/sub_10/U18/Y (AND2X1)                             0.05       0.63 f 
+  div16/sub_10/U16/Y (AND2X1)                             0.05       0.68 f 
+  div16/sub_10/U14/Y (AND2X1)                             0.05       0.73 f 
+  div16/sub_10/U12/Y (AND2X1)                             0.05       0.79 f 
+  div16/sub_10/U10/Y (AND2X1)                             0.05       0.84 f 
+  div16/sub_10/U8/Y (AND2X1)                              0.05       0.89 f 
+  div16/sub_10/U6/Y (AND2X1)                              0.05       0.95 f 
+  div16/sub_10/U4/Y (AND2X1)                              0.05       1.00 f 
+  div16/sub_10/U2/Y (AND2X1)                              0.05       1.05 f 
+  div16/sub_10/U1/Y (XOR2X2)                              0.09       1.14 f 
+  div16/sub_10/DIFF[31] (div16_DW01_sub_16)               0.00       1.14 f 
+  div16/mult_add_11_aco/B[0] (div16_DW02_mult_16)         0.00       1.14 f 
+  div16/mult_add_11_aco/A0_16/Y (AND2X1)                  0.07       1.22 f 
+  div16/mult_add_11_aco/PRODUCT[16] (div16_DW02_mult_16) 
+                                                          0.00       1.22 f 
+  div16/add_1_root_sub_15/B[16] (div16_DW01_add_16)       0.00       1.22 f 
+  div16/add_1_root_sub_15/U2/Y (XOR2X2)                   0.09       1.31 r 
+  div16/add_1_root_sub_15/SUM[16] (div16_DW01_add_16)     0.00       1.31 r 
+  div16/sub_0_root_sub_15/A[16] (div16_DW01_sub_15)       0.00       1.31 r 
+  div16/sub_0_root_sub_15/U2_16/CO (FADDX1)               0.10       1.41 r 
+  div16/sub_0_root_sub_15/U2_17/CO (FADDX1)               0.08       1.49 r 
+  div16/sub_0_root_sub_15/U2_18/CO (FADDX1)               0.08       1.58 r 
+  div16/sub_0_root_sub_15/U2_19/CO (FADDX1)               0.08       1.66 r 
+  div16/sub_0_root_sub_15/U2_20/CO (FADDX1)               0.08       1.74 r 
+  div16/sub_0_root_sub_15/U2_21/CO (FADDX1)               0.08       1.82 r 
+  div16/sub_0_root_sub_15/U2_22/CO (FADDX1)               0.08       1.91 r 
+  div16/sub_0_root_sub_15/U2_23/CO (FADDX1)               0.08       1.99 r 
+  div16/sub_0_root_sub_15/U2_24/CO (FADDX1)               0.08       2.07 r 
+  div16/sub_0_root_sub_15/U2_25/CO (FADDX1)               0.08       2.16 r 
+  div16/sub_0_root_sub_15/U2_26/CO (FADDX1)               0.08       2.24 r 
+  div16/sub_0_root_sub_15/U2_27/CO (FADDX1)               0.08       2.32 r 
+  div16/sub_0_root_sub_15/U2_28/CO (FADDX1)               0.08       2.40 r 
+  div16/sub_0_root_sub_15/U2_29/CO (FADDX1)               0.08       2.49 r 
+  div16/sub_0_root_sub_15/U2_30/CO (FADDX1)               0.08       2.57 r 
+  div16/sub_0_root_sub_15/U1/Y (XNOR2X2)                  0.10       2.67 f 
+  div16/sub_0_root_sub_15/DIFF[31] (div16_DW01_sub_15) 
+                                                          0.00       2.67 f 
+  div16/mult_add_16_aco/B[0] (div16_DW02_mult_15)         0.00       2.67 f 
+  div16/mult_add_16_aco/A0_15/Y (AND2X1)                  0.08       2.75 f 
+  div16/mult_add_16_aco/PRODUCT[15] (div16_DW02_mult_15) 
+                                                          0.00       2.75 f 
+  div16/add_1_root_sub_20/B[15] (div16_DW01_add_15)       0.00       2.75 f 
+  div16/add_1_root_sub_20/U3/Y (XOR2X2)                   0.09       2.84 r 
+  div16/add_1_root_sub_20/SUM[15] (div16_DW01_add_15)     0.00       2.84 r 
+  div16/sub_0_root_sub_20/A[15] (div16_DW01_sub_14)       0.00       2.84 r 
+  div16/sub_0_root_sub_20/U2_15/CO (FADDX1)               0.10       2.94 r 
+  div16/sub_0_root_sub_20/U2_16/CO (FADDX1)               0.08       3.02 r 
+  div16/sub_0_root_sub_20/U2_17/CO (FADDX1)               0.08       3.11 r 
+  div16/sub_0_root_sub_20/U2_18/CO (FADDX1)               0.08       3.19 r 
+  div16/sub_0_root_sub_20/U2_19/CO (FADDX1)               0.08       3.27 r 
+  div16/sub_0_root_sub_20/U2_20/CO (FADDX1)               0.08       3.36 r 
+  div16/sub_0_root_sub_20/U2_21/CO (FADDX1)               0.08       3.44 r 
+  div16/sub_0_root_sub_20/U2_22/CO (FADDX1)               0.08       3.52 r 
+  div16/sub_0_root_sub_20/U2_23/CO (FADDX1)               0.08       3.60 r 
+  div16/sub_0_root_sub_20/U2_24/CO (FADDX1)               0.08       3.69 r 
+  div16/sub_0_root_sub_20/U2_25/CO (FADDX1)               0.08       3.77 r 
+  div16/sub_0_root_sub_20/U2_26/CO (FADDX1)               0.08       3.85 r 
+  div16/sub_0_root_sub_20/U2_27/CO (FADDX1)               0.08       3.93 r 
+  div16/sub_0_root_sub_20/U2_28/CO (FADDX1)               0.08       4.02 r 
+  div16/sub_0_root_sub_20/U2_29/CO (FADDX1)               0.09       4.10 r 
+  div16/sub_0_root_sub_20/U1/Y (OR2X1)                    0.06       4.16 r 
+  div16/sub_0_root_sub_20/U3/Y (XNOR2X2)                  0.10       4.26 f 
+  div16/sub_0_root_sub_20/DIFF[31] (div16_DW01_sub_14) 
+                                                         0.00       4.26 f 
+  div16/mult_add_21_aco/B[0] (div16_DW02_mult_14)         0.00       4.26 f 
+  div16/mult_add_21_aco/A0_14/Y (AND2X1)                  0.08       4.34 f 
+  div16/mult_add_21_aco/PRODUCT[14] (div16_DW02_mult_14) 
+                                                          0.00       4.34 f 
+  div16/add_1_root_sub_25/B[14] (div16_DW01_add_14)       0.00       4.34 f 
+  div16/add_1_root_sub_25/U5/Y (XOR2X2)                   0.09       4.43 r 
+  div16/add_1_root_sub_25/SUM[14] (div16_DW01_add_14)     0.00       4.43 r 
+  div16/sub_0_root_sub_25/A[14] (div16_DW01_sub_13)       0.00       4.43 r 
+  div16/sub_0_root_sub_25/U2_14/CO (FADDX1)               0.10       4.53 r 
+  div16/sub_0_root_sub_25/U2_15/CO (FADDX1)               0.08       4.61 r 
+  div16/sub_0_root_sub_25/U2_16/CO (FADDX1)               0.08       4.70 r 
+  div16/sub_0_root_sub_25/U2_17/CO (FADDX1)               0.08       4.78 r 
+  div16/sub_0_root_sub_25/U2_18/CO (FADDX1)               0.08       4.86 r 
+  div16/sub_0_root_sub_25/U2_19/CO (FADDX1)               0.08       4.94 r 
+  div16/sub_0_root_sub_25/U2_20/CO (FADDX1)               0.08       5.03 r 
+  div16/sub_0_root_sub_25/U2_21/CO (FADDX1)               0.08       5.11 r 
+  div16/sub_0_root_sub_25/U2_22/CO (FADDX1)               0.08       5.19 r 
+  div16/sub_0_root_sub_25/U2_23/CO (FADDX1)               0.08       5.28 r 
+  div16/sub_0_root_sub_25/U2_24/CO (FADDX1)               0.08       5.36 r 
+  div16/sub_0_root_sub_25/U2_25/CO (FADDX1)               0.08       5.44 r 
+  div16/sub_0_root_sub_25/U2_26/CO (FADDX1)               0.08       5.52 r 
+  div16/sub_0_root_sub_25/U2_27/CO (FADDX1)               0.08       5.61 r 
+  div16/sub_0_root_sub_25/U2_28/CO (FADDX1)               0.09       5.69 r 
+  div16/sub_0_root_sub_25/U1/Y (OR2X1)                    0.06       5.75 r 
+  div16/sub_0_root_sub_25/U3/Y (OR2X1)                    0.05       5.80 r 
+  div16/sub_0_root_sub_25/U5/Y (XNOR2X2)                  0.10       5.91 f 
+  div16/sub_0_root_sub_25/DIFF[31] (div16_DW01_sub_13) 
                                                           0.00       5.91 f
-  div16/mult_add_26_aco/B[0] (div16_DW02_mult_13)         0.00       5.91 f
-  div16/mult_add_26_aco/A0_13/Y (AND2X1)                  0.08       5.98 f
-  div16/mult_add_26_aco/PRODUCT[13] (div16_DW02_mult_13)
-                                                          0.00       5.98 f
-  div16/add_1_root_sub_30/B[13] (div16_DW01_add_13)       0.00       5.98 f
-  div16/add_1_root_sub_30/U7/Y (XOR2X2)                   0.09       6.07 r
-  div16/add_1_root_sub_30/SUM[13] (div16_DW01_add_13)     0.00       6.07 r
-  div16/sub_0_root_sub_30/A[13] (div16_DW01_sub_12)       0.00       6.07 r
+  div16/mult_add_26_aco/B[0] (div16_DW02_mult_13)         0.00       5.91 f 
+  div16/mult_add_26_aco/A0_13/Y (AND2X1)                  0.08       5.98 f 
+  div16/mult_add_26_aco/PRODUCT[13] (div16_DW02_mult_13) 
+                                                           0.00       5.98 f
+  div16/add_1_root_sub_30/B[13] (div16_DW01_add_13)       0.00       5.98 f 
+  div16/add_1_root_sub_30/U7/Y (XOR2X2)                   0.09       6.07 r 
+  div16/add_1_root_sub_30/SUM[13] (div16_DW01_add_13)     0.00       6.07 r 
+  div16/sub_0_root_sub_30/A[13] (div16_DW01_sub_12)       0.00       6.07 r 
   div16/sub_0_root_sub_30/U2_13/CO (FADDX1)               0.10       6.18 r
   div16/sub_0_root_sub_30/U2_14/CO (FADDX1)               0.08       6.26 r
   div16/sub_0_root_sub_30/U2_15/CO (FADDX1)               0.08       6.34 r
